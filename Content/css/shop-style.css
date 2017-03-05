@@ -28,6 +28,9 @@ footer, header, hgroup, menu, nav, section {
 body {
     line-height: 1;
     background-color: #e9eef1;
+    font-family:Arial, "Lato", "Helvetica Neue", Helvetica,  sans-serif;
+    min-width: 990px;
+    width:990px;
 }
 
 ol, ul {
@@ -116,37 +119,50 @@ table {
 a {
     text-decoration: none;
 }
-
+.autentication-botton-clear{
+    padding-bottom: 2px;
+}
 .authentication-bar {
-    position: absolute;
-    right: 0px;
+    font-size: 70%;
 }
 
 .authentication-link {
     color: #000000;
-    padding: 5px;
 }
 
 .navbar-background {
-    background-image: image("http://localhost/Ryzn/Resources/Images/navigation.jpg");
+    background-image: url("../Resources/Images/navigation.jpg");
     background-size: contain;
+    max-height: 50px;
 }
 
 .navbar-background:first-child {
     padding: 0;
 }
-
+.navbar{
+    position: relative;
+    min-height: 60px;
+    margin-bottom: 21px;
+    border: 1px solid transparent;
+}
 .navbar-link {
     color: #F5FFFD;
     text-align: center;
-    font-size: 15px;
-    padding: 0 3% 5% 0;
+    font-size: 55%;
+    margin: 0 3% 5% 0;
+    text-align: center;
+    text-transform: uppercase;
 }
-
+.nav-right-child{
+    float: right;
+    margin: 0 0 0 8px;
+}
 .navbar-list {
 
 }
-
+.align-info{
+    align-content: center;
+}
 .navbar-list > li {
     display: inline;
 }
@@ -161,16 +177,19 @@ a {
 
 img {
     max-width: 100%;
+
     height: auto;
 }
 
 .cart-bar {
+    justify-content: center;
     top: 10%;
     right: 0;
     padding: 3px;
     border: 2px solid gray;
     border-radius: 5px;
-
+    width: 250px;
+    max-height: 100px;
 }
 
 .cart-btn {
@@ -182,30 +201,33 @@ img {
     text-align: center;
 }
 
-.cart-bar > span {
-    text-align: center;
-    font-weight: bolder;
-}
-
 .white-line {
     width: 95%;
     background-color: white;
+    border-bottom-width: 0px;
+    margin-top: 0px;
+    border-top-width: 0px;
+    padding-top: 1px;
+"
 
 }
 
 .slide-container {
     max-width: 100%;
     position: relative;
+    margin: auto;
 }
+.slides{
 
+}
 .single-slide {
-
+    display: none;
 }
 
 .dot {
     cursor: pointer;
-    height: 13px;
-    width: 13px;
+    height: 7px;
+    width: 7px;
     margin: 0 2px;
     background-color: #bbb;
     border-radius: 50%;
@@ -240,13 +262,24 @@ img {
 }
 
 .slide-text {
+    font-size: 90%;
     position: absolute;
     float: left;
     left: 5%;
     top: 10%;
     width: 30%;
 }
-
+.slide-title{
+    font-weight: 200;
+    font-size: 200%;
+    text-transform: uppercase;
+}
+.slide-model{
+    font-weight: 900;
+}
+.slide-summary{
+    font-weight: 600;
+}
 .slide-buttons {
     position: absolute;
     float: left;
@@ -266,7 +299,7 @@ img {
     position: absolute;
     left: 8%;
     top: 22%;
-    font-size: 15px;
+    font-size: 90%;
 }
 
 .more-info {
@@ -313,15 +346,8 @@ img {
 
 }
 
-.search-bar {
-    position: relative;
-}
 
-.keyword-field {
-    width: 250px;
-    border-radius: 2px;
-    background-color: #e9eef1;
-}
+
 
 .search-btn {
     position: relative;
@@ -332,29 +358,23 @@ img {
     border-radius: 2px;
 }
 
-.contact-info {
-    color: #8b9999;
-}
-
 .grey-text {
-    position: absolute;
-    right: 0;
     color: #8b9999;
-    font-size: 10pt;
+    font-size: 60%;
+    text-transform: uppercase;
 }
 
 .products-text {
-    position: absolute;
-    left: 0;
+    font-weight: bold;
     color: #005292;
-    font-size: 20pt;
+    font-size: 105%;
 }
 
 .contact-info > * {
-    padding: 5px;
+    padding: 2px;
 }
 
-.side-clear {
+.clear-side {
     padding-left: 0;
     padding-right: 0;
 }
@@ -367,11 +387,14 @@ img {
     border-radius: 5px;
     padding: 10px 5px 10px 5px;
     margin: auto;
-    font-size: 10pt;
+    font-size: 80%;
     height: 220px;
     overflow: hidden;
 }
 
+.merchandise-space{
+    padding:10px;
+}
 .merchandise-box > span {
     position: absolute;
     left: 10%;
@@ -393,7 +416,7 @@ img {
 .merchandise-main-image {
     position: absolute;
     top: 20%;
-    left: 15%;
+    left: 8%;
 }
 
 .slide-side-color {
@@ -404,10 +427,65 @@ img {
     padding: 0;
 }
 
-.botton-line {
-    position: absolute;
-    bottom: 0;
+
+.contact-info {
+    color: #8b9999;
+    font-size: 70%;
 }
+
+.match-col{
+    display: flex;
+}
+
+.categories-align>div{
+    padding:5px 5px 20px 5px;
+}
+.merchandise-box-name{
+    font-size: 80%;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+.search-bar {
+    position: relative;
+}
+.search-bar .fa-search{
+    position: absolute;
+    top:5px;
+    left:4px;
+    color:#c4d3d8;
+}
+.keyword-field {
+    width: 250px;
+    border-radius: 2px;
+    background-color: #e9eef1;
+    text-indent: 20px;
+    border: 1px solid #aaa;
+    height: 25px;
+}
+
+.fa-envelope-o{
+    position: absolute;
+    color:#c9d3d5;
+    left:20px;
+    top:25px;
+    z-index: 1999;
+}
+
 .close-icon {
     border:1px solid transparent;
     background-color: transparent;
@@ -419,20 +497,31 @@ img {
 .buletin{
     position: absolute;
     right:0;
+    top:0;
 }
 .bul-field{
     position: relative;
     height:27px;
     border-radius: 4px;
     left:11px;
+    max-width:150px;
+    background-color: #e9eef1;
+    border: 1px solid #aaa;
+    text-indent:30px;
 }
 .buletin>h3{
     position: relative;
     left:11px;
 }
-.match-col{
-    display: flex;
+.contact-info>a{
+    text-decoration: none;
+    color: #8b9999;
 }
-.right-nav{
-    right:0;
+.space{
+    margin: 6px;
+}
+.cart-txt{
+    position: relative;
+    top:-3px;
+    right:4px;
 }

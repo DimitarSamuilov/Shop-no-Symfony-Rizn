@@ -25,7 +25,7 @@ class MerchandiseAction
     }
 
     public function getMerchandise(){
-        $query="select id,name,price,description, image from merchandise limit 8";
+        $query="select id,name,price,image from merchandise limit 8";
         $statement=$this->db->prepare($query);
         $statement->execute();
         while($single=$statement->fetchObject(Merchandise::class)){
@@ -35,14 +35,14 @@ class MerchandiseAction
 
     public function getSingleMerchandise($id)
     {
-        $query="SELECT name, price ,description FROM merchandise where id=?";
+        $query="SELECT name, price , FROM merchandise where id=?";
         $statement=$this->db->prepare($query);
         $statement->execute([$id]);
         return $statement->fetchObject(Merchandise::class);
     }
     public function getAllMerchandise()
     {
-        $query="select id,name,price,description, image from merchandise";
+        $query="select id,name,price, image ,promo_price as promoPrice , date_added as dateAdded from merchandise";
         $statement=$this->db->prepare($query);
         $statement->execute();
         while ($data=$statement->fetchObject(Merchandise::class)){

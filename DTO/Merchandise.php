@@ -14,10 +14,67 @@ class Merchandise
     private $id;
     private $name;
     private $price;
-    private $description;
+    private $promoPrice;
+    private $dateAdded;
     private $image;
-    private $summary;
     private $userId;
+    private $categoryId;
+
+    /**
+     * @return mixed
+     */
+    public function getCategoryId()
+    {
+        return $this->categoryId;
+    }
+
+    /**
+     * @param mixed $categoryId
+     */
+    public function setCategoryId($categoryId)
+    {
+        $this->categoryId = $categoryId;
+    }
+
+    private function getFormattedDate()
+    {
+        return $this->getDateAdded()->format('Y-m-d H:i:s');
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPromoPrice()
+    {
+        return $this->promoPrice;
+    }
+
+    /**
+     * @param mixed $promoPrice
+     */
+    public function setPromoPrice($promoPrice)
+    {
+        $this->promoPrice = $promoPrice;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDateAdded()
+    {
+        return $this->dateAdded;
+    }
+
+    /**
+     * @param mixed $dateAdded
+     */
+    public function setDateAdded($dateAdded)
+    {
+        $this->dateAdded = $dateAdded;
+    }
+
+
+
 
     /**
      * @return mixed
@@ -35,23 +92,8 @@ class Merchandise
         $this->userId = $userId;
     }
 
-    /**
-     * @return string
-     */
-    public function getSummary()
-    {
-        if($this->summary==null){
-            $this->setSummary();
-        }
-        return $this->summary;
-    }
 
 
-    public function setSummary()
-    {
-
-        $this->summary = substr($this->getDescription(),0,50)."...";
-    }
 
     /**
      * @return mixed
@@ -101,21 +143,6 @@ class Merchandise
         $this->price = $price;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getDescription()
-    {
-        return $this->description;
-    }
-
-    /**
-     * @param mixed $description
-     */
-    public function setDescription($description)
-    {
-        $this->description = $description;
-    }
 
     /**
      * @return mixed
