@@ -1,7 +1,17 @@
 <?php
 ViewEngine\Template::render("admin-header");
 ?>
-<form class="form-horizontal" method="POST">
+
+<?php if (isset($_SESSION[\Config\ErrorMessage::ERROR_SESSION_KEY])): ?>
+    <div class="alert alert-danger">
+        <?= ($_SESSION[\Config\ErrorMessage::ERROR_SESSION_KEY]) ?>
+    </div>
+    <?php
+    unset($_SESSION[\Config\ErrorMessage::ERROR_SESSION_KEY]);
+
+endif; ?>
+
+    <form class="form-horizontal" method="POST">
     <fieldset>
         <legend>Вход</legend>
         <div class="form-group">

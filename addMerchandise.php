@@ -7,23 +7,24 @@ if (!$userLifecycle->isAdmin($userId)) {
     exit;
 }
 if(isset($_POST['name'],$_POST['price'],$_POST['promoPrice']) and !empty($_FILES['image']['tmp_name'])){
-
-
     $price=$_POST['price'];
     $name=$_POST['name'];
     $promoPrice=$_POST['promoPrice'];
     $merchandise=new \DTO\Merchandise();
     if(!is_numeric($promoPrice)){
         header("Location:addMerchandise.php");
+        $authentication->setAttribute(\Config\ErrorMessage::ERROR_SESSION_KEY,"Промоционалната цена трябва да е число!");
         exit;
     }
     if(!is_numeric($price)){
         header("Location:addMerchandise.php");
+        $authentication->setAttribute(\Config\ErrorMessage::ERROR_SESSION_KEY,"Цената трябва да е число!");
         exit;
     }
     $fileName=$merchandiseAction->processFile($_FILES['image']);
     if(!$fileName){
         header("Location:addMerchandise.php");
+        $authentication->setAttribute(\Config\ErrorMessage::ERROR_SESSION_KEY,"Неподходяща снимак!");
         exit;
     }
     $merchandise->setPromoPrice($promoPrice);
@@ -34,13 +35,11 @@ if(isset($_POST['name'],$_POST['price'],$_POST['promoPrice']) and !empty($_FILES
 
    if(!$merchandiseAction->addMerchandise($merchandise)){
         header("Location:addMerchandise.php");
+       $authentication->setAttribute(\Config\ErrorMessage::ERROR_SESSION_KEY,"Възникна грешка");
         exit;
     }
     header("Location:adminView.php");
     exit;
-
-
 }
-
 
 ViewEngine\Template::render("addMerchandise");

@@ -1,11 +1,22 @@
 <?php
 ViewEngine\Template::render("admin-header");
 ?>
+
+
+<?php if (isset($_SESSION[\Config\ErrorMessage::ERROR_SESSION_KEY])): ?>
+    <div class="alert alert-danger">
+        <?= ($_SESSION[\Config\ErrorMessage::ERROR_SESSION_KEY]) ?>
+    </div>
+    <?php
+    unset($_SESSION[\Config\ErrorMessage::ERROR_SESSION_KEY]);
+
+endif; ?>
+
     <form class="form-horizontal" method="post">
         <fieldset>
             <legend>Регистрация</legend>
             <div class="form-group">
-                <label for="username" class="col-lg-2 control-label">Потребителско  име</label>
+                <label for="username" class="col-lg-2 control-label">Потребителско име</label>
                 <div class="col-lg-10">
                     <input type="text" name="username" class="form-control" id="username" placeholder="Username">
                 </div>
@@ -13,13 +24,15 @@ ViewEngine\Template::render("admin-header");
             <div class="form-group">
                 <label for="inputPassword" class="col-lg-2 control-label">Парола</label>
                 <div class="col-lg-10">
-                    <input type="password" name="password" class="form-control" id="inputPassword" placeholder="Password">
+                    <input type="password" name="password" class="form-control" id="inputPassword"
+                           placeholder="Password">
                 </div>
             </div>
             <div class="form-group">
                 <label for="inputPasswordR" class="col-lg-2 control-label">Повтори парола</label>
                 <div class="col-lg-10">
-                    <input type="password" name="passwordRepeat" class="form-control" id="inputPasswordR" placeholder="Repeat password">
+                    <input type="password" name="passwordRepeat" class="form-control" id="inputPasswordR"
+                           placeholder="Repeat password">
                 </div>
             </div>
             <div class="form-group">

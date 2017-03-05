@@ -17,6 +17,10 @@ if(isset($_POST['username'],$_POST['password'],$_POST['passwordRepeat'])){
         if($result[0]) {
             $authentication->setAttribute(\Actions\AuthenticationAction::KEY_SESSION_USER_ID,$result[1]);
             header("Location: index.php");
+
+        }else{
+            $authentication->setAttribute(\Config\ErrorMessage::ERROR_SESSION_KEY,"Поребителското име е заето");
+            header("Location: register.php");
             exit;
         }
     }

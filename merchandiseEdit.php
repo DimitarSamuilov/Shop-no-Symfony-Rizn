@@ -43,7 +43,6 @@ if (isset($_POST['name'], $_POST['price'], $_POST['promoPrice'])) {
         header("Location:merchandiseEdit.php?id=" . $id);
         exit;
     }
-
 }
 
 ViewEngine\Template::render('editMerchandise', $merchandise);

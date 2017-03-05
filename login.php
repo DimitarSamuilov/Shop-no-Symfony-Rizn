@@ -1,18 +1,28 @@
 <?php
 session_start();
 require_once 'application.php';
-if($authentication->isLogged()){
+if ($authentication->isLogged()) {
     header("Location: index.php");
     exit;
 }
-if(isset($_POST['username'],$_POST['password']) ){
-    $password=$_POST['password'];
-    $username=$_POST['username'];
-    $user=$userLifecycle->getUser($username);
-    $result=$authentication->verify($password,$user->getPassword());
-    if($result){
-        $authentication->login($user->getId());
-        header("Location: index.php");
+if (isset($_POST['username'], $_POST['password'])) {
+    $password = $_POST['password'];
+    $username = $_POST['username'];
+    $user = $userLifecycle->getUser($username);
+    if ($user != null) {
+        $result = $authentication->verify($password, $user->getPassword());
+        if ($result) {
+            $authentication->login($user->getId());
+            header("Location: index.php");
+            exit;
+        }else{
+            $authentication->setAttribute(\Config\ErrorMessage::ERROR_SESSION_KEY,"Несъществуващ потребител");
+            header("Location: login.php");
+            exit;
+        }
+    }else {
+        $authentication->setAttribute(\Config\ErrorMessage::ERROR_SESSION_KEY,"Несъществуващ потребител");
+        header("Location: login.php");
         exit;
     }
 }
