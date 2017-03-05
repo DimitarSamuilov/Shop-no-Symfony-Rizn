@@ -13,6 +13,10 @@ if (isset($_POST['username'], $_POST['password'])) {
         $result = $authentication->verify($password, $user->getPassword());
         if ($result) {
             $authentication->login($user->getId());
+            if($userLifecycle->isAdmin($user->getId())){
+                header("Location: adminView.php");
+                exit;
+            }
             header("Location: index.php");
             exit;
         }else{

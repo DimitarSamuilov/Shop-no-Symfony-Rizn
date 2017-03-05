@@ -14,6 +14,9 @@
             <div class="navbar-header">
                 <a href="index.php" class="navbar-brand">Главна Страница</a>
             </div>
+            <div class="navbar-header">
+                <a href="logout.php" class="navbar-brand">Изход</a>
+            </div>
         </div>
     </div>
 </header>
