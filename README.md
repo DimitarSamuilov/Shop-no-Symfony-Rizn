@@ -1,1 +1,1 @@
-# Shop-no-Symfony-Ryzn
+# Shop-no-Symfony-Rizn
