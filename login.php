@@ -1,6 +1,10 @@
 <?php
 session_start();
 require_once 'application.php';
+if($authentication->isLogged()){
+    header("Location: index.php");
+    exit;
+}
 if(isset($_POST['username'],$_POST['password']) ){
     $password=$_POST['password'];
     $username=$_POST['username'];

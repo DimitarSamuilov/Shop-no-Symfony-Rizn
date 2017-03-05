@@ -7,18 +7,19 @@ ViewEngine\Template::render('admin-header');
             <th>ID</th>
             <th>Име</th>
             <th>Цена</th>
-            <th>Описание</th>
+            <th>Дата</th>
             <th>Операции </th>
         </tr>
         </thead>
         <tbody>
         <?php
         foreach($data as $single): ?>
+            <?/*= var_dump($single)*/?>
             <tr>
                 <td><?= $single->getId(); ?></td>
                 <td><?= $single->getName(); ?></td>
                 <td><?= $single->getPrice(); ?></td>
-                <td><?= $single->getSummary(); ?></td>
+                <td><?= $single->getDateAdded(); ?></td>
                 <td><a href="merchandiseEdit.php?id=<?= $single->getId()?>"
                        class="btn btn-primary btn-xs">Редактирай</a></td>
                 <td><a href="deleteMerchandise.php?id=<?= $single->getId()?>" class="btn btn-primary btn-xs">Изтрий</a>

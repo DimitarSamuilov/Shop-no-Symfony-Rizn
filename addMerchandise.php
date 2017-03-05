@@ -7,7 +7,7 @@ if (!$userLifecycle->isAdmin($userId)) {
     exit;
 }
 
-if(isset($_POST['name'],$_POST['price'],$_POST['description'])){
+if(isset($_POST['submit'],$_POST['name'],$_POST['price'],$_POST['description'])){
     $description=$_POST['description'];
     $price=$_POST['price'];
     $name=$_POST['name'];

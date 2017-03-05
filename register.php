@@ -22,4 +22,5 @@ if(isset($_POST['username'],$_POST['password'],$_POST['passwordRepeat'])){
     }
 }
 
+
 ViewEngine\Template::render('registerForm');

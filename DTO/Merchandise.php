@@ -36,7 +36,7 @@ class Merchandise
         $this->categoryId = $categoryId;
     }
 
-    private function getFormattedDate()
+    public function getFormattedDate()
     {
         return $this->getDateAdded()->format('Y-m-d H:i:s');
     }

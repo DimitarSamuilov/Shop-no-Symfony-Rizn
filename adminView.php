@@ -5,4 +5,4 @@ if(!$userLifecycle->isAdmin($authentication->getAttribute(\Actions\Authenticatio
     header("Location:login.php");
     exit;
 }
-ViewEngine\Template::render('adminList',$merchandiseAction->getMerchandise());
+ViewEngine\Template::render('adminList',$merchandiseAction->getAllMerchandise());

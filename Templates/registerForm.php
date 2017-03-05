@@ -1,7 +1,7 @@
 <?php
 ViewEngine\Template::render("admin-header");
 ?>
-    <form class="form-horizontal" method="post" target="register.php">
+    <form class="form-horizontal" method="post">
         <fieldset>
             <legend>Регистрация</legend>
             <div class="form-group">
