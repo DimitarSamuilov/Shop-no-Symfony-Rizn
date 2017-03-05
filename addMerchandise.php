@@ -6,26 +6,41 @@ if (!$userLifecycle->isAdmin($userId)) {
     header("Location:login.php");
     exit;
 }
+if(isset($_POST['name'],$_POST['price'],$_POST['promoPrice']) and !empty($_FILES['image']['tmp_name'])){
 
-if(isset($_POST['submit'],$_POST['name'],$_POST['price'],$_POST['description'])){
-    $description=$_POST['description'];
+
     $price=$_POST['price'];
     $name=$_POST['name'];
+    $promoPrice=$_POST['promoPrice'];
     $merchandise=new \DTO\Merchandise();
+    if(!is_numeric($promoPrice)){
+        header("Location:addMerchandise.php");
+        exit;
+    }
     if(!is_numeric($price)){
         header("Location:addMerchandise.php");
         exit;
     }
+    $fileName=$merchandiseAction->processFile($_FILES['image']);
+    if(!$fileName){
+        header("Location:addMerchandise.php");
+        exit;
+    }
+    $merchandise->setPromoPrice($promoPrice);
+    $merchandise->setImage($fileName);
     $merchandise->setPrice($price);
     $merchandise->setUserId($userId);
-    $merchandise->setDescription($description);
     $merchandise->setName($name);
-    if(!$merchandiseAction->addMerchandise($merchandise)){
+
+   if(!$merchandiseAction->addMerchandise($merchandise)){
         header("Location:addMerchandise.php");
         exit;
     }
     header("Location:adminView.php");
     exit;
+
+
 }
-$userId=$authentication->getAttribute(\Actions\AuthenticationAction::KEY_SESSION_USER_ID);
+
+
 ViewEngine\Template::render("addMerchandise");

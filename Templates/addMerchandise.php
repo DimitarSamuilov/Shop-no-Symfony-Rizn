@@ -1,7 +1,7 @@
 <?php
 ViewEngine\Template::render("admin-header");
 ?>
-<form class="form-horizontal"  method="post">
+<form class="form-horizontal"  method="POST"  enctype="multipart/form-data">
     <fieldset>
         <legend>Добавяне на продукт</legend>
         <div class="form-group">
@@ -13,13 +13,19 @@ ViewEngine\Template::render("admin-header");
         <div class="form-group">
             <label for="price" class="col-lg-2 control-label">Цена</label>
             <div class="col-lg-10">
-                <input type="number" name="price" class="form-control" id="price" placeholder="Цена" ">
+                <input type="text" name="price" class="form-control" id="price" placeholder="Цена" ">
             </div>
         </div>
         <div class="form-group">
-            <label for="textArea" class="col-lg-2 control-label">Описание</label>
+            <label for="price" class="col-lg-2 control-label">Промоционална цена</label>
             <div class="col-lg-10">
-                <textarea class="form-control" name="description" rows="3" id="textArea"></textarea>
+                <input type="text" name="promoPrice" class="form-control" id="price" placeholder="Промоционална цена" ">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label" for="article_title">Изображение</label>
+            <div class="col-sm-4 ">
+                <input type="file"  name="image" required="required">
             </div>
         </div>
         <div class="form-group">

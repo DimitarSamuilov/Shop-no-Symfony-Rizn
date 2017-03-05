@@ -11,8 +11,9 @@ if(!isset($_GET['id'])){
     exit;
 }
 $id=$_GET['id'];
-if($merchandiseAction->getSingleMerchandise($id)==null){
-    header("Location:adminList.php");
+if($merchandiseAction->doesMerchandiseExists($id)){
+
+     header("Location:adminView.php");
     exit;
 }
 $merchandiseAction->deleteMerchandise($id);

@@ -9,22 +9,41 @@ if (!isset($_GET['id'])) {
     header("Location: adminView.php");
     exit;
 }
+
 $id = $_GET['id'];
-if (isset($_POST['name'], $_POST['price'], $_POST['description'])) {
+$merchandise = $merchandiseAction->getSingleMerchandise($id);
+if (isset($_POST['name'], $_POST['price'], $_POST['promoPrice'])) {
     $price = $_POST['price'];
+    $promoPrice = $_POST['promoPrice'];
+    $name = $_POST['name'];
     if (!is_numeric($price)) {
         header("Location:merchandiseEdit.php?id=" . $id);
         exit;
     }
-    $name = $_POST['name'];
-    $description = $_POST['description'];
-    $merchandise = new \DTO\Merchandise();
+    if (!is_numeric($promoPrice)) {
+        header("Location:merchandiseEdit.php?id=" . $id);
+        exit;
+    }
+    if (empty($name)) {
+        header("Location:merchandiseEdit.php?id=" . $id);
+        exit;
+    }
     $merchandise->setName($name);
     $merchandise->setPrice($price);
-    $merchandise->setDescription($description);
-    $merchandiseAction->editMerchandise($id,$merchandise);
-    header("Location:adminView.php");
-    exit;
+    $merchandise->setPromoPrice($promoPrice);
+    if (!empty($_FILES['image']['tmp_name'])) {
+        $fileName = $merchandiseAction->processFile($_FILES['image']);
+        $merchandise->setImage($fileName);
+    }
+
+    if ($merchandiseAction->editMerchandise($id, $merchandise)) {
+        header("Location:adminView.php");
+        exit;
+    }else {
+        header("Location:merchandiseEdit.php?id=" . $id);
+        exit;
+    }
+
 }
-$data = $merchandiseAction->getSingleMerchandise($id);
-ViewEngine\Template::render('editMerchandise', $data);
+
+ViewEngine\Template::render('editMerchandise', $merchandise);

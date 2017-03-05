@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf48d7a3-26c7-43b9-9f3a-826aa4ecb27c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Config/FileUploadConfig.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DTO/Merchandise.php" afterPath="$PROJECT_DIR$/DTO/Merchandise.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/adminList.php" afterPath="$PROJECT_DIR$/Templates/adminList.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/loginForm.php" afterPath="$PROJECT_DIR$/Templates/loginForm.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/registerForm.php" afterPath="$PROJECT_DIR$/Templates/registerForm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Actions/MerchandiseAction.php" afterPath="$PROJECT_DIR$/Actions/MerchandiseAction.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/addMerchandise.php" afterPath="$PROJECT_DIR$/Templates/addMerchandise.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Templates/editMerchandise.php" afterPath="$PROJECT_DIR$/Templates/editMerchandise.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addMerchandise.php" afterPath="$PROJECT_DIR$/addMerchandise.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adminView.php" afterPath="$PROJECT_DIR$/adminView.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.php" afterPath="$PROJECT_DIR$/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/register.php" afterPath="$PROJECT_DIR$/register.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deleteMerchandise.php" afterPath="$PROJECT_DIR$/deleteMerchandise.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/merchandiseEdit.php" afterPath="$PROJECT_DIR$/merchandiseEdit.php" />
     </list>
     <ignored path="Ryzn.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,22 +30,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="adminList.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Templates/adminList.php">
+      <file leaf-file-name="editMerchandise.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Templates/editMerchandise.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="14" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="39" />
+            <state relative-caret-position="488">
+              <caret line="33" column="39" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="adminView.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/adminView.php">
+      <file leaf-file-name="merchandiseEdit.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/merchandiseEdit.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="12">
+              <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MerchandiseAction.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Actions/MerchandiseAction.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="487">
+              <caret line="58" column="55" selection-start-line="58" selection-start-column="55" selection-end-line="58" selection-end-column="55" />
+              <folding>
+                <element signature="e#113#141#0#PHP" expanded="true" />
+                <marker date="1488740623061" expanded="true" signature="430:480" ph="select id,us... merchandise" />
+                <marker date="1488740623061" expanded="true" signature="430:481" ph="select id,na... merchandise" />
+                <marker date="1488740623061" expanded="true" signature="967:1064" ph="select id,na... merchandise" />
+                <marker date="1488740623061" expanded="true" signature="1422:1493" ph="UPDATE merch... " />
+                <marker date="1488740623061" expanded="true" signature="1875:1973" ph="insert into merchandise... " />
+                <marker date="1488740623061" expanded="true" signature="2448:2482" ph="delete from " />
+                <marker date="1488740623061" expanded="true" signature="3297:3379" ph="select name merchandise" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -76,17 +94,11 @@
         <option value="$PROJECT_DIR$/application.php" />
         <option value="$PROJECT_DIR$/Actions/UserLifecycle.php" />
         <option value="$PROJECT_DIR$/editDatabaseMerchandise.php" />
-        <option value="$PROJECT_DIR$/merchandiseEdit.php" />
-        <option value="$PROJECT_DIR$/Templates/addMerchandise.php" />
-        <option value="$PROJECT_DIR$/Templates/editMerchandise.php" />
         <option value="$PROJECT_DIR$/Templates/admin-header.php" />
-        <option value="$PROJECT_DIR$/deleteMerchandise.php" />
-        <option value="$PROJECT_DIR$/Actions/MerchandiseAction.php" />
         <option value="C:/ShopProject/app/Resources/views/homepage.html.twig" />
         <option value="$PROJECT_DIR$/Content/css/shop-style.css" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="C:/ShopProject/web/css/shop-style.css" />
-        <option value="$PROJECT_DIR$/addMerchandise.php" />
         <option value="$PROJECT_DIR$/loginUser.php" />
         <option value="$PROJECT_DIR$/Templates/homepage.php" />
         <option value="$PROJECT_DIR$/Actions/AuthenticationAction.php" />
@@ -98,8 +110,15 @@
         <option value="$PROJECT_DIR$/Actions/SessionAction.php" />
         <option value="$PROJECT_DIR$/login.php" />
         <option value="$PROJECT_DIR$/adminView.php" />
-        <option value="$PROJECT_DIR$/DTO/Merchandise.php" />
         <option value="$PROJECT_DIR$/Templates/adminList.php" />
+        <option value="$PROJECT_DIR$/Config/FileUploadConfig.php" />
+        <option value="$PROJECT_DIR$/DTO/Merchandise.php" />
+        <option value="$PROJECT_DIR$/deleteMerchandise.php" />
+        <option value="$PROJECT_DIR$/Templates/addMerchandise.php" />
+        <option value="$PROJECT_DIR$/Templates/editMerchandise.php" />
+        <option value="$PROJECT_DIR$/addMerchandise.php" />
+        <option value="$PROJECT_DIR$/Actions/MerchandiseAction.php" />
+        <option value="$PROJECT_DIR$/merchandiseEdit.php" />
       </list>
     </option>
   </component>
@@ -172,6 +191,62 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ViewEngine" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ryzn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ryzn" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Templates" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ryzn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ryzn" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DTO" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ryzn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ryzn" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Content" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ryzn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ryzn" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Config" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -269,7 +344,7 @@
       <workItem from="1488542490573" duration="1819000" />
       <workItem from="1488546250003" duration="772000" />
       <workItem from="1488547592827" duration="19271000" />
-      <workItem from="1488719151496" duration="10683000" />
+      <workItem from="1488719151496" duration="19847000" />
     </task>
     <task id="LOCAL-00001" summary="Frontend fixed">
       <created>1488725703507</created>
@@ -285,11 +360,18 @@
       <option name="project" value="LOCAL" />
       <updated>1488730287694</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Frontend fixed">
+      <created>1488730295913</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1488730295913</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32545000" />
+    <option name="totallyTimeSpent" value="41709000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-140" width="1456" height="916" extended-state="6" />
@@ -334,79 +416,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Templates/adminFooter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../phpSoftUni/Exercise/Templates/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../phpSoftUni/Exercise/Templates/create_category_frontend.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../phpSoftUni/Exercise/Templates/category_frontend.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../phpSoftUni/Exercise/Templates/view_categories_frontend.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/block.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DTO/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="6" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/navigation.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Content/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="1413" column="8" selection-start-line="1413" selection-start-column="2" selection-end-line="1413" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../phpSoftUni/Exercise/mainFiles/add_new_topic.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -415,38 +424,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/editDatabaseMerchandise.php" />
-    <entry file="file://$PROJECT_DIR$/Templates/editMerchandise.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="99" selection-start-line="15" selection-start-column="99" selection-end-line="15" selection-end-column="99" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Templates/addMerchandise.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/merchandiseEdit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="22" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deleteMerchandise.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/ShopProject/src/ShopBundle/Repository/MerchandiseRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -512,14 +489,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="151" column="9" selection-start-line="151" selection-start-column="9" selection-end-line="151" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addMerchandise.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -596,22 +565,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/login_frontend.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Templates/admin-header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -632,14 +585,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="14" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -710,27 +655,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DTO/Merchandise.php">
+    <entry file="file://C:/ShopProject/app/Resources/views/admin/add.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="38" column="11" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
+        <state relative-caret-position="442">
+          <caret line="41" column="26" selection-start-line="36" selection-start-column="20" selection-end-line="41" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Actions/MerchandiseAction.php">
+    <entry file="file://$PROJECT_DIR$/Config/DbConfig.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="42" column="26" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="26" />
-          <folding>
-            <marker date="1488722464680" expanded="true" signature="401:451" ph="select id,us... merchandise" />
-            <marker date="1488722464680" expanded="true" signature="401:452" ph="select id,na... merchandise" />
-            <marker date="1488722464680" expanded="true" signature="714:762" ph="SELECT name,... merchandise" />
-            <marker date="1488722464680" expanded="true" signature="976:1073" ph="select id,na... merchandise" />
-            <marker date="1488722464680" expanded="true" signature="1412:1475" ph="UPDATE merch... " />
-            <marker date="1488722464680" expanded="true" signature="1795:1869" ph="insert into merchandise... " />
-            <marker date="1488722464680" expanded="true" signature="2168:2202" ph="delete from " />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Content/Images/fec15822deacb0f4948e03bd31318a3d.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Content/Images/b4d75c8bcaf300bda3550829c2f1d662.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Content/Images/5afdeed018851d5abf7da55aa5962a3c.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -742,10 +702,122 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Desktop/login_frontend.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Config/FileUploadConfig.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="14" column="79" selection-start-line="14" selection-start-column="79" selection-end-line="14" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Content/Images/96298acd7a35a529e2a8acd436d7478f.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Content/Images/e4e81efea98f5601b3425fd2437302db.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Content/Images/01b24f8b03fb5cfb1b676df6cac3c5ef.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deleteMerchandise.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DTO/Merchandise.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/adminView.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ShopProject/app/Resources/views/admin/edit.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="45" column="26" selection-start-line="40" selection-start-column="19" selection-end-line="45" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Templates/addMerchandise.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addMerchandise.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Templates/editMerchandise.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="33" column="39" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Actions/MerchandiseAction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="58" column="55" selection-start-line="58" selection-start-column="55" selection-end-line="58" selection-end-column="55" />
+          <folding>
+            <element signature="e#113#141#0#PHP" expanded="true" />
+            <marker date="1488740623061" expanded="true" signature="430:480" ph="select id,us... merchandise" />
+            <marker date="1488740623061" expanded="true" signature="430:481" ph="select id,na... merchandise" />
+            <marker date="1488740623061" expanded="true" signature="967:1064" ph="select id,na... merchandise" />
+            <marker date="1488740623061" expanded="true" signature="1422:1493" ph="UPDATE merch... " />
+            <marker date="1488740623061" expanded="true" signature="1875:1973" ph="insert into merchandise... " />
+            <marker date="1488740623061" expanded="true" signature="2448:2482" ph="delete from " />
+            <marker date="1488740623061" expanded="true" signature="3297:3379" ph="select name merchandise" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/merchandiseEdit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
           <folding />
         </state>
       </provider>
