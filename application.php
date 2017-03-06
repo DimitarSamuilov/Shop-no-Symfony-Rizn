@@ -11,5 +11,4 @@ Driver\Database::setInstance(
 $db=Driver\Database::getInstances("ROOT_ACCESS");
 $userLifecycle=new \Actions\UserLifecycle($db);
 $merchandiseAction=new \Actions\MerchandiseAction($db);
-$sessionAction=new \Actions\SessionAction($_SESSION);
 $authentication=new \Actions\AuthenticationAction($db,$_SESSION);
